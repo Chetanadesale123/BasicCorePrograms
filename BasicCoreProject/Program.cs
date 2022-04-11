@@ -7,7 +7,7 @@ class Program
     {
         Console.WriteLine("Welcome to Basic Programs");
         bool end = true;
-        Console.WriteLine("1. FlipCoin\n 2.LeapYear n 3. End the Program");
+        Console.WriteLine("1. FlipCoin\n 2.LeapYear \n 3.PowerOfTwo  \n 4. End the Program");
         while (end == true)
         {
             Console.WriteLine("Take an option to execute");
@@ -24,6 +24,10 @@ class Program
                     lip.Year();
                     break;
                 case 3:
+                    PowerOfTwo power = new PowerOfTwo();
+                    power.Power();
+                    break;
+                case 4:
                     end = false;
                     break;
                 default:
