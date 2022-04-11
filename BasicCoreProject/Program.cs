@@ -7,7 +7,7 @@ class Program
     {
         Console.WriteLine("Welcome to Basic Programs");
         bool end = true;
-        Console.WriteLine("1. FlipCoin\n 2.LeapYear \n 3.PowerOfTwo  \n 4.Harmonic number \n 5. Prime factors \n 6. Quotient and Remainder \n 7. End the Program");
+        Console.WriteLine("1. FlipCoin\n 2.LeapYear \n 3.PowerOfTwo  \n 4.Harmonic number \n 5. Prime factors \n 6. Quotient and Remainder \n 7.swap no \n 8. End the Program");
         while (end == true)
         {
             Console.WriteLine("Take an option to execute");
@@ -40,6 +40,10 @@ class Program
                     quorem.QuotientRemainder();
                     break;
                 case 7:
+                    SwapTwoNumbers swap = new SwapTwoNumbers();
+                    swap.SwapNo();
+                    break;
+                case 8:
                     end = false;
                     break;
                 default:
