@@ -7,7 +7,7 @@ class Program
     {
         Console.WriteLine("Welcome to Basic Programs");
         bool end = true;
-        Console.WriteLine("1. FlipCoin\n 2.LeapYear \n 3.PowerOfTwo  \n 4.Harmonic number \n 5. Prime factors \n 6. End the Program");
+        Console.WriteLine("1. FlipCoin\n 2.LeapYear \n 3.PowerOfTwo  \n 4.Harmonic number \n 5. Prime factors \n 6. Quotient and Remainder \n 7. End the Program");
         while (end == true)
         {
             Console.WriteLine("Take an option to execute");
@@ -28,7 +28,7 @@ class Program
                     power.Power();
                     break;
                 case 4:
-                    HarmonicNumber harmonic= new HarmonicNumber();
+                    HarmonicNumber harmonic = new HarmonicNumber();
                     harmonic.HarmonicNo();
                     break;
                 case 5:
@@ -36,6 +36,10 @@ class Program
                     factors.PrimeFactor();
                     break;
                 case 6:
+                    QuotientAndRemainder quorem = new QuotientAndRemainder();
+                    quorem.QuotientRemainder();
+                    break;
+                case 7:
                     end = false;
                     break;
                 default:
@@ -43,8 +47,5 @@ class Program
                     break;
             }
         }
-
-
-
     }
 }
