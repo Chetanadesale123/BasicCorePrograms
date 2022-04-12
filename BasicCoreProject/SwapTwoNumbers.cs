@@ -10,12 +10,13 @@ namespace BasicCorePrograms
     {
         public void SwapNo()
         {
-            int temp, num1 = 50, num2 = 60;
-            Console.WriteLine("Numbers before swapping :" +"num1: " +num1 +" "+" " +"num2:" +" "+num2 );
-            temp = num1;
-            num1 = num2;
-            num2 = temp;
-            Console.WriteLine("Numbers after swapping :"+"num1 :" +num1 +" "+"num2 :"+" "+num2);
+            int num1 = 50, num2 = 60;
+            Console.WriteLine("Numbers before swapping :" + "num1 :" + num1 + " " + "num2 :" + " " + num2);
+
+            num1 = num1 + num2;
+            num2 = num1 - num2;
+            num1 = num1 - num2;
+            Console.WriteLine("Numbers after swapping :" + "num1 :" + num1 + " " + "num2 :" + " " + num2);
         }
     }
 }
